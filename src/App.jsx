@@ -11,19 +11,19 @@ export default function App() {
 
   const caseStudies = [
     {
-      title: "High-Concurrency Payment & Lending Platform",
+      title: "Modular Cloud Integration & Database Engineering",
       company: "Spenda",
       period: "03/2025 - Current",
-      role: "Senior Backend Engineer",
-      challenge: "Automate complex accounts payable/receivable workflows while scaling transaction throughput securely and reducing processing latency.",
-      solution: "Architected core features using Clean Architecture and SOLID principles. Built an Event-Driven Architecture leveraging Azure Service Bus (Topics/Queues) to ensure transaction data decoupling and high integrity. Implemented serverless background tasks via .NET 8 Azure Functions for low-latency payment processing, optimizing high-volume queries and stored procedures in SQL Server to ensure seamless audit trails.",
+      role: "Backend Engineer",
+      challenge: "Build and maintain scalable, decoupled backend modules to power core enterprise operations including quoting, inventory management, warehousing, service jobs, and secure payment processing.",
+      solution: "Engineered specialized serverless backend logic using .NET 8 Azure Functions across independent business domains (QuoteMgmt, Inventory, WarehouseMgmt, and ServiceJobMgmt). Integrated external payment APIs to handle secure financial transactions. Designed optimized database tables and wrote complex stored procedures (SProcs) in SQL Server to ensure data integrity, while validating API behavior using Postman and enforcing stability via rigorous unit and integration testing.",
       tags: [".NET 8", "Azure Service Bus", "Azure Functions", "SQL Server", "Azure DevOps"]
     },
     {
       title: "Enterprise Legacy Modernization (COBOL Mainframe)",
       company: "ICWA",
       period: "05/2023 - 02/2025",
-      role: "Senior Angular - .NET Developer",
+      role: "Angular - .NET Developer",
       challenge: "Decommission and replace a massive legacy institutional COBOL mainframe system without interrupting live, active business operational data.",
       solution: "Spearheaded the digital transformation by engineering a highly scalable .NET backend ecosystem paired with a modern Angular single-page frontend. Developed complex integration and database layers to safely sync application logic across legacy DB2 and Oracle environments while maintaining total data normalization and consistency throughout the multi-year migration phase.",
       tags: ["Angular", ".NET Core", "DB2", "Oracle", "Jenkins"]
@@ -32,26 +32,45 @@ export default function App() {
       title: "Cloud-Native Industrial Data Applications",
       company: "Capgemini",
       period: "07/2022 - 04/2023",
-      role: "Senior Consultant",
+      role: "Consultant",
       challenge: "Deliver high-fidelity data monitoring systems for mining clients while adhering strictly to rigorous enterprise-level PII compliance rules.",
       solution: "Designed and built full-stack software applications utilizing React, Azure App Services, and .NET Core. Engineered standalone custom PII Anonymization modules using .NET and Oracle to maintain strict privacy laws. Reduced infrastructure compute costs via targeted Azure Functions deployments and streamlined deployment environments via Octopus Deploy and TeamCity workflows.",
       tags: ["React", ".NET Core", "Azure App Service", "Octopus Deploy", "PII Security"]
+    },
+    {
+      title: "Enterprise Benchmarking & Data Analytics Engine",
+      company: "MOA Benchmarking",
+      period: "02/2021 - 06/2022",
+      role: ".NET Developer",
+      challenge: "Maintain and scale high-performance data analytics reporting tools used by clients for institutional benchmarking evaluation metrics.",
+      solution: "Programmed robust backend APIs using .NET Framework and structured data mapping strategies with NHibernate. Optimized relational database layers via SQL Server to process heavy numerical analysis datasets. Designed and updated highly interactive web interfaces using jQuery, HTML5, and CSS3 to output clear data tables and visuals for end-users.",
+      tags: [".NET Framework", "NHibernate", "SQL Server", "jQuery", "Data Tracking"]
+    },
+    {
+      title: "Legacy VB.NET Core Platform Migration",
+      company: "Odyssey Gaming",
+      period: "03/2020 - 02/2021",
+      role: "Software Developer",
+      challenge: "Port aging legacy business logic into modern object-oriented structures to increase computational durability and reduce operational system errors.",
+      solution: "Successfully translated legacy VB.NET code components over into fully optimized C# MVC codebases. Structured modular, highly reusable presentation components to improve platform rendering scales. Conducted rigorous live testing, handled active bug resolution, and performed high-pressure system debugging during live test cycles.",
+      tags: ["C#", "ASP.NET MVC", "VB.NET Migration", "Component Optimization", "Debugging"]
     }
   ];
 
   const workHistory = [
     {
-      role: "Senior Backend Engineer",
+      role: "Backend Engineer",
       company: "Spenda",
       period: "03/2025 - Current",
       highlights: [
-        "Automated accounts payable/receivable workflows using Clean Architecture.",
-        "Integrated secure banking APIs and external ERP solutions (Xero, MYOB) via RESTful services.",
-        "Automated comprehensive CI/CD pipelines via Azure DevOps to slash deployment times."
+        "Developed and deployed robust serverless backend modules via Azure Functions to cleanly isolate Quote, Inventory, Warehouse, and Service Job application logic.",
+        "Successfully integrated a secure transactional payment API into the core application ecosystem.",
+        "Designed relational database tables, authored optimized stored procedures (SProcs), and implemented extensive unit and integration testing suites to protect code quality.",
+        "Performed comprehensive API contract validation using Postman, conducted peer code reviews, and managed functional bug fixes across deployment environments."
       ]
     },
     {
-      role: "Senior Angular - .NET Developer",
+      role: "Angular - .NET Developer",
       company: "ICWA",
       period: "05/2023 - 02/2025",
       highlights: [
@@ -61,13 +80,33 @@ export default function App() {
       ]
     },
     {
-      role: "Senior Consultant",
+      role: "Consultant",
       company: "Capgemini",
       period: "07/2022 - 04/2023",
       highlights: [
         "Architected real-time telemetry systems for enterprise resources.",
         "Managed UI design pipelines using Figma prior to native front-end assembly.",
         "Optimized processing overhead using customized cloud configurations."
+      ]
+    },
+    {
+      role: ".NET Developer",
+      company: "MOA Benchmarking",
+      period: "02/2021 - 06/2022",
+      highlights: [
+        "Designed and maintained benchmark APIs leveraging .NET Framework, NHibernate, and SQL Server components.",
+        "Constructed responsive, dynamic client reporting interfaces utilizing interactive jQuery elements.",
+        "Participated within structured sprint guidelines and managed task lifecycles through Jira workflow environments."
+      ]
+    },
+    {
+      role: "Software Developer",
+      company: "Odyssey Gaming",
+      period: "03/2020 - 02/2021",
+      highlights: [
+        "Ported outdated legacy VB.NET applications cleanly over into high-performance C# MVC structures.",
+        "Built reusable UI modules to provide responsive UI rendering scales across core systems.",
+        "Executed real-time production troubleshooting, system debugging, and active patch development."
       ]
     }
   ];
@@ -78,18 +117,18 @@ export default function App() {
         
         {/* Header / Hero */}
         <header className="mb-16 border-b border-slate-900 pb-12">
-          <div className="flex items-center space-x-2 text-teal-400 font-mono text-sm mb-3">
+          {/* <div className="flex items-center space-x-2 text-teal-400 font-mono text-sm mb-3">
             <Terminal size={16} />
             <span>SYSTEM.INIT()</span>
-          </div>
+          </div> */}
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
             Mareena Joseph
           </h1>
           <p className="text-xl md:text-2xl font-medium text-teal-400 mt-1">
-            Senior Backend & Cloud Engineer
+            Full Stack Developer
           </p>
           <p className="mt-4 max-w-2xl text-slate-400 leading-relaxed text-base">
-            Back-end engineering professional specializing in designing robust enterprise APIs, architecting decoupled event-driven systems on Azure, and leading complex legacy modernizations. Grounded firmly in Clean Architecture, SOLID design patterns, and operational precision.
+            Full-stack developer with comprehensive expertise in both front-end and back-end technologies. Skilled in writing robust enterprise APIs, building decoupled event-driven systems on Azure, and executing technical deliverables for complex legacy modernizations. Grounded firmly in applying Clean Architecture, SOLID design patterns, and high operational precision.
           </p>
           
           {/* Action Links */}
@@ -97,7 +136,7 @@ export default function App() {
             <a href="mailto:reachmareena@gmail.com" className="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-teal-500/50 px-4 py-2 rounded-lg text-slate-300 transition-colors">
               <Mail size={15} className="text-teal-400" /> reachmareena@gmail.com
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-teal-500/50 px-4 py-2 rounded-lg text-slate-300 transition-colors">
+            <a href="https://www.linkedin.com/in/mareena-joseph-33390765" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-teal-500/50 px-4 py-2 rounded-lg text-slate-300 transition-colors">
               <span className="text-teal-400 font-bold font-mono">in</span> LinkedIn
             </a>
           </div>
