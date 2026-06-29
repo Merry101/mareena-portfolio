@@ -13,15 +13,16 @@ export default function App() {
     {
       title: "Modular Cloud Integration & Database Engineering",
       company: "Spenda",
-      period: "03/2025 - Current",
+      period: "03/2025 - 06/2026",
       role: "Backend Engineer",
       challenge: "Build and maintain scalable, decoupled backend modules to power core enterprise operations including quoting, inventory management, warehousing, service jobs, and secure payment processing.",
       solution: "Engineered specialized serverless backend logic using .NET 8 Azure Functions across independent business domains (QuoteMgmt, Inventory, WarehouseMgmt, and ServiceJobMgmt). Integrated external payment APIs to handle secure financial transactions. Designed optimized database tables and wrote complex stored procedures (SProcs) in SQL Server to ensure data integrity, while validating API behavior using Postman and enforcing stability via rigorous unit and integration testing.",
       tags: [".NET 8", "Azure Service Bus", "Azure Functions", "SQL Server", "Azure DevOps"]
     },
     {
-      title: "Enterprise Legacy Modernization (COBOL Mainframe)",
-      company: "ICWA",
+      title: "Enterprise Legacy Modernization (COBOL Mainframe to 
+        Angular .NET Framework)",
+      company: "Insurance Commission of Western Australia",
       period: "05/2023 - 02/2025",
       role: "Angular - .NET Developer",
       challenge: "Decommission and replace a massive legacy institutional COBOL mainframe system without interrupting live, active business operational data.",
@@ -61,7 +62,7 @@ export default function App() {
     {
       role: "Backend Engineer",
       company: "Spenda",
-      period: "03/2025 - Current",
+      period: "03/2025 - 06/2026",
       highlights: [
         "Developed and deployed robust serverless backend modules via Azure Functions to cleanly isolate Quote, Inventory, Warehouse, and Service Job application logic.",
         "Successfully integrated a secure transactional payment API into the core application ecosystem.",
@@ -71,7 +72,7 @@ export default function App() {
     },
     {
       role: "Angular - .NET Developer",
-      company: "ICWA",
+      company: "Insurance Commission of Western Australia",
       period: "05/2023 - 02/2025",
       highlights: [
         "Successfully managed database structures and legacy migration pipelines.",
