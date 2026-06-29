@@ -20,8 +20,7 @@ export default function App() {
       tags: [".NET 8", "Azure Service Bus", "Azure Functions", "SQL Server", "Azure DevOps"]
     },
     {
-      title: "Enterprise Legacy Modernization (COBOL Mainframe to 
-        Angular .NET Framework)",
+      title: "Enterprise Legacy Modernization (COBOL Mainframe)",
       company: "Insurance Commission of Western Australia",
       period: "05/2023 - 02/2025",
       role: "Angular - .NET Developer",
